@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const url = require("url");
 const { getGreeting } = require("./modules/utils");
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 http
   .createServer((req, res) => {
