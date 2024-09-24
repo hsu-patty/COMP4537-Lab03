@@ -2,6 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const url = require("url");
 const { getGreeting } = require("./modules/utils");
+const PORT = 3001;
 
 http
   .createServer((req, res) => {
@@ -42,4 +43,4 @@ http
       });
     }
   })
-  .listen(3033);
+  .listen(PORT);
